@@ -1,0 +1,146 @@
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.text-underline {
+    text-decoration: underline;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.justify-end {
+    justify-content: flex-end;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.full-width, .w-full {
+    width: 100%;
+}
+
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+.ml-xs {
+    margin-left: 4px;
+}
+
+.mx-xs {
+    margin-left: 4px;
+    margin-right: 4px;
+}
+
+.mr-xs {
+    margin-right: 4px;
+}
+
+.mb-xs {
+    margin-bottom: 4px;
+}
+
+.mt-xs {
+    margin-top: 4px;
+}
+
+.mb-sm {
+    margin-bottom: 8px;
+}
+
+.mt-sm {
+    margin-top: 8px;
+}
+
+.mb-md {
+    margin-bottom: 12px;
+}
+
+.mt-md {
+    margin-top: 12px;
+}
+
+.mx-md {
+    margin: 0 8px;
+}
+
+.overflow-hidden {
+    overflow: hidden;
+}
+
+.overflow-x-hidden {
+    overflow-x: hidden;
+}
+
+.mx-auto {
+    margin: 0 auto;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.font-bold {
+    font-weight: bold;
+}
+
+.custom-disable {
+    opacity: .6;
+    cursor:  not-allowed !important;
+}
+
+.opacity-0 {
+    opacity: 0;
+    transition: opacity .1s ease-in-out;
+}
+
+.transition {
+    transition: all .3s ease-in-out;
+}
+
+.mt-2 {
+    margin-top: .5rem;
+}
+
+.ml-2 {
+    margin-left: .5rem;
+}
+
+.mt-6 {
+    margin-top: 1.5rem;
+}
+
+.mb-6 {
+    margin-bottom: 1.5rem;
+}
+
+.font-semibold {
+    font-weight: 600;
+}
+
+.font-normal {
+    font-weight: 400;
+}
+
+.text-left {
+    text-align: start;
+}
+
+.color-default {
+    color: $text-default;
+}

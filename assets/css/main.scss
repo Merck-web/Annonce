@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Karla:ital,wght@0,200..800;1,200..800&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Play:wght@400;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Space+Grotesk:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Karla:ital,wght@0,200..800;1,200..800&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Play:wght@400;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Space+Grotesk:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Karla:ital,wght@0,200..800;1,200..800&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Play:wght@400;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Space+Grotesk:wght@300..700&display=swap');
+
+//GLOBAL
+@import 'variables.scss';
+@import 'keyframes.scss';
+@import 'shortcuts.scss';
+
+@import "components/header.scss";
+@import "components/footer.scss";
+
+@import "sections/index/head";
+
+:root {
+    --font-family:   "Inter", sans-serif;
+    --second-family: "Noto Serif", sans-serif;
+    --third-family:  "Open Sans", sans-serif;
+}
+
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+html {
+    scrollbar-gutter: stable;
+}
+
+body {
+    font-family:             var(--font-family);
+    font-optical-sizing:     auto;
+    font-weight:             normal;
+    font-style:              normal;
+    font-variation-settings: 'slnt' 0;
+    margin:                  0;
+    color:                   #0f0f0f;
+}
+
+.container {
+    max-width: 1809px;
+    width:     100%;
+    margin:    0 auto;
+
+    @media (max-width: 1809px) {
+        padding: 0 19px;
+    }
+}
+
+ul {
+    padding: 0;
+    margin:  0;
+}
+
+p, h1 {
+    margin: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color:           inherit;
+    text-decoration: none;
+    transition:      opacity .4s ease-in-out;
+
+    &:hover {
+        opacity: .7;
+    }
+}
+
+button {
+    border:           none;
+    outline:          none;
+    background-color: transparent;
+    cursor:           pointer;
+    padding:          0;
+}
+
+video {
+    pointer-events: none;
+    user-select:    none;
+}
