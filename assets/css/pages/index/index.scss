@@ -1,0 +1,74 @@
+.main-page {
+    .filter-select {
+        max-width:     438px;
+        width:         100%;
+        margin-bottom: 24px;
+
+        .q-field__control {
+            background:    #ededed;
+            border:        1px solid #dbdbdb;
+            border-radius: 12px;
+            max-height:    56px;
+        }
+
+        .q-field__control:before,
+        .q-field__control:after {
+            display: none;
+        }
+
+        .q-field__native {
+            font-family: var(--font-family);
+            font-weight: 500;
+            font-size:   15px;
+            line-height: 160%;
+            color:       $text-default;
+            padding:     5px 0;
+        }
+
+        .q-select__dropdown-icon {
+            width:  11px;
+            height: 9px;
+        }
+    }
+
+    .market-list {
+        display:               grid;
+        grid-template-columns: repeat(4, 430px);
+        gap:                   48px 8px;
+        max-width:             1745px;
+        width:                 100%;
+        margin:                0 auto 73px;
+    }
+}
+
+.filter-select-menu {
+    padding:       12px 8px;
+    border-radius: 12px;
+    box-shadow:    0 4px 10px 0 rgba(16, 21, 52, 0.1);
+
+    .q-item {
+        padding:       12px;
+        border-radius: 8px;
+        font-weight:   400;
+        font-size:     15px;
+        line-height:   160%;
+    }
+
+    .q-item--active {
+        color: inherit;
+    }
+
+    .q-focus-helper {
+        &::before {
+            display: none;
+        }
+    }
+
+    .title {
+        margin-top: 12px;
+    }
+
+    .title.disabled * {
+        cursor: default !important;
+    }
+}
