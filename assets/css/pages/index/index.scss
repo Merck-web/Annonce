@@ -33,11 +33,21 @@
 
     .market-list {
         display:               grid;
-        grid-template-columns: repeat(4, 430px);
+        grid-template-columns: repeat(auto-fill, 430px);
         gap:                   48px 8px;
         max-width:             1745px;
         width:                 100%;
         margin:                0 auto 73px;
+
+        @media (max-width: 1744px) {
+            justify-content: space-evenly;
+        }
+
+        @media (max-width: $mobile) {
+            grid-template-columns: 1fr;
+            padding:               0 16px;
+            margin-bottom: 12px;
+        }
     }
 }
 

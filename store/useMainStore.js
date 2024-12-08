@@ -39,6 +39,7 @@ export const useMainStore = defineStore({
                     amount:  7_500,
                     label:   'Старые барабаны',
                     status:  2,
+                    thing: true,
                 },
                 {
                     src:     '5.png',

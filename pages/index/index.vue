@@ -1,7 +1,7 @@
 <template>
     <NuxtLayout>
         <div class="main-page">
-            <div class="row items-center justify-center">
+            <div class="row items-center justify-center q-px-md">
                 <q-select
                     v-model="model"
                     :options="options"
