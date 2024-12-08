@@ -13,7 +13,7 @@
                     dropdown-icon="img:icons/select-dropdown.svg"
                 >
                     <template
-                        v-slot:option="scope"
+                        #option="scope"
                     >
                         <q-item
                             v-bind="scope.itemProps"
@@ -34,7 +34,7 @@
                                     v-if="scope.opt.label === model"
                                     src="/icons/selected.svg"
                                     alt="Выбранный элемент"
-                                />
+                                >
                             </div>
                         </q-item>
                     </template>

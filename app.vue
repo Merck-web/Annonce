@@ -17,7 +17,7 @@ onMounted(() => {
     nextTick(() => {
         mainStore.changeWindowWidth(window.innerWidth);
     });
-    window.addEventListener('resize', event => {
+    window.addEventListener('resize', () => {
         mainStore.changeWindowWidth(window.innerWidth);
     }, { signal });
 });

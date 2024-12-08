@@ -4,8 +4,8 @@
             <ul class="agency-list">
                <li
                    v-for="(item, index) in mainStore.getAgencyData"
-                   class="agency-list__item"
                    :key="index"
+                   class="agency-list__item"
                >
                    <CardAgency
                        :item="item"

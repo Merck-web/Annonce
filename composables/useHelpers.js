@@ -1,5 +1,5 @@
 export function useHelpers() {
-    const addSpacesToNumber = (number, isInputNumberCounter = false) => {
+    const addSpacesToNumber = (number) => {
         if (number == null) number = '0';
         
         if (typeof number !== 'string') number = number.toString();

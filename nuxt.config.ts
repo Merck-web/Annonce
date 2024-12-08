@@ -10,6 +10,7 @@ export default defineNuxtConfig({
                 autoImports: [ [ 'defineStore', 'definePiniaStore' ] ],
             },
         ],
+        '@nuxt/eslint',
     ],
     css:               [
         '~/assets/css/main.scss',

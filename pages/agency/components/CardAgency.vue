@@ -4,7 +4,7 @@
             :src="`/agency/${item.photo}`"
             :alt="`Отзыв ${item.name}`"
             class="card-agency__photo pc"
-        />
+        >
         
         <div class="card-agency__content">
             <div class="card-agency__header d-flex">
@@ -12,7 +12,7 @@
                     :src="`/agency/${item.photo}`"
                     :alt="`Отзыв ${item.name}`"
                     class="card-agency__photo mobile"
-                />
+                >
                 
                 <div
                     class="card-agency__name"

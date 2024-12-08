@@ -5,8 +5,8 @@
         >
             <span
                 class="header-burger__line"
-                :class="mainStore.getBurgerState ? 'is-active' : ''"
-            ></span>
+                :class="computedClass"
+            />
         </button>
 </template>
 

@@ -7,7 +7,7 @@
             <img
                 src="/public/icons/check.svg"
                 alt="Иконка проверены"
-            />
+            >
             
             <template
                 v-if="documentApproveShort && computedWidth < 600"
@@ -27,7 +27,7 @@
             <img
                 src="/public/icons/star.svg"
                 alt="Иконка рейтинга"
-            />
+            >
             {{ rating }}
         </li>
         <li class="head-list__item d-flex items-center justify-center">

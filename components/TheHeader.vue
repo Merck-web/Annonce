@@ -16,7 +16,7 @@
                             class="header-left__logo cursor-pointer"
                             src="/public/icons/logo.svg"
                             alt="Логотип"
-                        />
+                        >
                     </router-link>
                     
                     <button
@@ -27,14 +27,14 @@
                             alt="Все категории"
                             width="16px"
                             height="16px"
-                        />
+                        >
                         Все категории
                         
                         <q-menu>
                             <q-list>
                                 <q-item
-                                    clickable
                                     v-close-popup
+                                    clickable
                                 >
                                     <q-item-section>Тут какие то все категории</q-item-section>
                                 </q-item>
@@ -46,7 +46,7 @@
                         <img
                             src="/public/icons/basket.svg"
                             alt="Корзина"
-                        />
+                        >
                         
                         <div class="header-left__basket--count">6</div>
                     </div>
@@ -60,7 +60,7 @@
                             alt="Маркер"
                             width="16px"
                             height="16px"
-                        />
+                        >
                         
                         <p>Ростов-на-Дону</p>
                     </div>
@@ -75,7 +75,7 @@
                         <img
                             src="/public/images/man.png"
                             alt="Аватар"
-                        />
+                        >
                     </button>
                 </div>
             </div>

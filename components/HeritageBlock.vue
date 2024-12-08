@@ -4,7 +4,7 @@
             class="head-logo"
             src="/public/images/nasledie.png"
             alt="Лого наследия"
-        />
+        >
         
         <h1 class="head-title">Наследие</h1>
         

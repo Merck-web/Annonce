@@ -4,14 +4,14 @@
             <img
                 :src="`/market/${item.src}`"
                 :alt="`Картинка ${item.label}`"
-            />
+            >
             
             <div class="img-info d-flex items-center justify-start">
                 <div class="img-info__reviews">
                     <img
                         src="/public/icons/eye.svg"
                         alt="Просмотры"
-                    />
+                    >
                     {{ item.reviews }}
                 </div>
                 
@@ -19,7 +19,7 @@
                     <img
                         src="/public/icons/calendar.svg"
                         alt="Дней"
-                    />
+                    >
                     {{ declineWord(item.days, 'день', 'дня', 'дней') }}
                 </div>
                 
