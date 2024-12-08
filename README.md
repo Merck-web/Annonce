@@ -2,7 +2,7 @@
 
 Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
 
-## Запус
+## Запуск
 
 Перед запуском, выбрать версию Node.JS 18.18.2
 
