@@ -1,75 +1,27 @@
-# Nuxt Minimal Starter
+# README
 
 Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
 
-## Setup
+## Запус
 
-Make sure to install dependencies:
+Перед запуском, выбрать версию Node.JS 18.18.2
 
 ```bash
-# npm
+# Устанавливаем скрипты через npm
 npm install
-
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
 ```
 
-## Development Server
-
-Start the development server on `http://localhost:3000`:
 
 ```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
+# Проверить линтер
+npm lint
 ```
-
-## Production
-
-Build the application for production:
 
 ```bash
-# npm
-npm run build
-
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
+# Запустить автотест
+npm vitest
 ```
 
-Locally preview production build:
+## Авторизация
 
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+Просходит по нажатию кнопки "Показать номер телефона", повторной нажатие вызовет Logout. Без авторизации нельзя попасть на страницу "Агенты"
