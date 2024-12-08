@@ -6,20 +6,7 @@
         
             <q-page-container>
                 <section class="head">
-                    <img
-                        class="head-logo"
-                        src="/public/images/nasledie.png"
-                        alt="Лого наследия"
-                    />
-                    
-                    <h1 class="head-title">Наследие</h1>
-                    
-                    <ApproveRow
-                        class="head-list items-center justify-center"
-                        document-approve
-                        :rating="4.3"
-                        :testimonials="19"
-                    />
+                    <HeritageBlock />
                     
                     <button class="head-tell">
                         Показать номер телефона
@@ -69,6 +56,7 @@
 import TheHeader from '~/components/TheHeader.vue';
 import TheFooter from '~/components/TheFooter.vue';
 import { useMainStore } from '~/store/useMainStore.js';
+import HeritageBlock from '~/components/HeritageBlock.vue';
 
 const mainStore = useMainStore();
 </script>

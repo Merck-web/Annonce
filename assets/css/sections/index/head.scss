@@ -7,11 +7,14 @@
     flex-direction: column;
     align-items:    center;
 
+    .heritage {
+        @media (max-width: $mobile) {
+            display: none !important;
+        }
+    }
+
     &-logo {
         margin-bottom: 24px;
-        @media (max-width: $mobile) {
-            display: none;
-        }
     }
 
     &-title {
@@ -19,16 +22,10 @@
         font-size:     24px;
         line-height:   117%;
         margin-bottom: 12px;
-        @media (max-width: $mobile) {
-            display: none;
-        }
     }
 
     &-list {
         margin-bottom: 24px;
-        @media (max-width: $mobile) {
-            display: none;
-        }
 
         &__item {
             font-weight: 400;
