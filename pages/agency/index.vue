@@ -23,4 +23,14 @@ import CardAgency from '~/pages/agency/components/CardAgency.vue';
 import { useMainStore } from '~/store/useMainStore.js';
 
 const mainStore = useMainStore();
+
+definePageMeta({
+    middleware: [ 'auth' ],
+})
+
+const { fetchData } = useFetchData();
+
+onMounted(async () => {
+    mainStore.agencyData = await fetchData('agencyData');
+});
 </script>

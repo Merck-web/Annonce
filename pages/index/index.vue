@@ -49,7 +49,7 @@
                 />
             </div>
         </div>
-
+    
     </NuxtLayout>
 </template>
 
@@ -103,8 +103,10 @@ const options = [
 ];
 
 const mainStore = useMainStore();
+
+const { fetchData } = useFetchData();
+
+onMounted(async () => {
+    mainStore.marketData = await fetchData('marketData');
+});
 </script>
-
-<style scoped>
-
-</style>
