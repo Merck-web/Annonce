@@ -14,7 +14,7 @@
                     >
                         <img
                             class="header-left__logo cursor-pointer"
-                            src="/public/icons/logo.svg"
+                            :src="headerData.logo"
                             alt="Логотип"
                         >
                     </router-link>
@@ -48,7 +48,7 @@
                             alt="Корзина"
                         >
                         
-                        <div class="header-left__basket--count">6</div>
+                        <div class="header-left__basket--count">{{ headerData.basketCount }}</div>
                     </div>
                 </div>
                 
@@ -62,7 +62,7 @@
                             height="16px"
                         >
                         
-                        <p>Ростов-на-Дону</p>
+                        <p>{{ headerData.place }}</p>
                     </div>
                     
                     <button class="header-right__create">Разместить объявление</button>
@@ -86,10 +86,12 @@
 <script
     setup
 >
-
 import TheBurger from '~/components/TheBurger.vue';
+const { fetchData } = useFetchData();
+
+const headerData = ref({});
+
+onMounted(async () => {
+    headerData.value = await fetchData('header')
+})
 </script>
-
-<style scoped>
-
-</style>

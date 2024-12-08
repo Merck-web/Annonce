@@ -38,6 +38,9 @@ export const useMainStore = defineStore({
         },
         logout() {
             useCookie('auth_token').value = null;
+            if (window.location.href.includes('agency')) {
+                navigateTo('/');
+            }
         },
     },
     getters: {

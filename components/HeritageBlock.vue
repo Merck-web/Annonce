@@ -9,10 +9,11 @@
         <h1 class="head-title">Наследие</h1>
         
         <ApproveRow
+            v-if="Object.keys(approveData).length"
             class="head-list items-center justify-center"
-            document-approve
-            :rating="4.3"
-            :testimonials="19"
+            :document-approve="approveData.documentApprove"
+            :rating="approveData.rating"
+            :testimonials="approveData.testimonials"
             :document-approve-short="documentApproveShort"
         />
     </div>
@@ -21,9 +22,17 @@
 <script
     setup
 >
+const { fetchData } = useFetchData();
+
 defineProps({
     documentApproveShort: { type: Boolean, default: false },
 });
+
+const approveData = ref({});
+
+onMounted(async () => {
+    approveData.value = await fetchData('rating')
+})
 </script>
 
 <style

@@ -1,9 +1,21 @@
 export default defineEventHandler((event) => {
-    const query = getQuery(event)
-
+    const query = getQuery(event);
+    
     switch (query.type) {
+        case 'header':
+            return { data: { basketCount: 6, logo: '/icons/logo.svg', place: 'Ростов-на-Дону' } };
+        case 'rating':
+            return { data: { documentApprove: true, rating: 4.3, testimonials: 19 } };
+        case 'about':
+            return { data: {
+                    companyText: 'Копкой занимаемся 15 лет. Все началось с хобби и плавно переросло в любимую работу. Работаем с профессиональной техникой.',
+                    companyTime: 'Сегодня с 8:00 до 23:00',
+                    companyMap:  'Ростов на Дону, Воронежская ул., 42А корп. 12',
+                }
+            };
         case 'marketData':
-            return { data:  [
+            return {
+                data: [
                     {
                         src:     '1.png',
                         reviews: 750,
@@ -69,9 +81,11 @@ export default defineEventHandler((event) => {
                         label:   'Пылесос кёрхер с водяным мешком для сбора пыли',
                         status:  3,
                     },
-                ] };
+                ],
+            };
         case 'agencyData':
-            return { data: [
+            return {
+                data: [
                     {
                         name:            'Дмитрий Хитрый',
                         documentApprove: true,
@@ -118,7 +132,8 @@ export default defineEventHandler((event) => {
                         text:            'Помог справиться с потерей и организовать похороны для 126 семей ну и еще чуть описания, чтобы дойти до конца строки и текст будет отсекаться. Помог справиться с потерей и организовать похороны для 126 семей ну и еще чуть описания, чтобы дойти до конца строки и текст будет отсекаться',
                         photo:           '6.png',
                     },
-                ] };
+                ],
+            };
         default:
             return { error: 'Invalid data type' };
     }

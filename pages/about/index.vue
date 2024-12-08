@@ -14,7 +14,7 @@
                     </p>
                     
                     <p class="about-page__text">
-                        Копкой занимаемся 15 лет. Все&nbsp;началось с хобби и плавно переросло в любимую работу. Работаем с&nbsp;профессиональной техникой.
+                        {{ aboutData.companyText || '-' }}
                     </p>
                 </div>
                 <div class="about-page__time">
@@ -38,7 +38,7 @@
                     </p>
                     
                     <p class="about-page__text">
-                        Сегодня с 8:00 до 23:00
+                        {{ aboutData.companyTime || '-' }}
                     </p>
                 </div>
                 <div class="about-page__map">
@@ -49,8 +49,7 @@
                             </p>
                             
                             <p class="about-page__text">
-                                Ростов на Дону, Воронежская ул., 42А
-                                <nobr>корп. 12</nobr>
+                                {{ aboutData.companyMap || '-' }}
                             </p>
                         </div>
                         
@@ -67,10 +66,16 @@
 
 <script
     setup
-    lang="ts"
 >
-
 import HeritageBlock from '~/components/HeritageBlock.vue';
+
+const { fetchData } = useFetchData();
+
+const aboutData = ref({});
+
+onMounted(async () => {
+    aboutData.value = await fetchData('about');
+});
 </script>
 
 <style
