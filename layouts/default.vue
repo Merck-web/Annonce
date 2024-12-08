@@ -14,25 +14,12 @@
                     
                     <h1 class="head-title">Наследие</h1>
                     
-                    <ul class="head-list d-flex items-center justify-center">
-                        <li class="head-list__item d-flex items-center justify-center">
-                            <img
-                                src="/public/icons/check.svg"
-                                alt="Иконка проверены"
-                            />
-                            Документы проверены
-                        </li>
-                        <li class="head-list__item d-flex items-center justify-center">
-                            <img
-                                src="/public/icons/star.svg"
-                                alt="Иконка рейтинга"
-                            />
-                            4.7
-                        </li>
-                        <li class="head-list__item d-flex items-center justify-center">
-                            19 отзывов
-                        </li>
-                    </ul>
+                    <ApproveRow
+                        class="head-list items-center justify-center"
+                        document-approve
+                        :rating="4.3"
+                        :testimonials="19"
+                    />
                     
                     <button class="head-tell">
                         Показать номер телефона

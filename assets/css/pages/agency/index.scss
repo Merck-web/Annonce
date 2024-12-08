@@ -1,0 +1,17 @@
+.agency-page {
+    .agency-list {
+        display:               grid;
+        grid-template-columns: 1fr;
+        gap:                   12px;
+
+        max-width:             580px;
+        width:                 100%;
+        margin:                0 auto 64px;
+        justify-items: center;
+
+
+        @media (max-width: $miniTablet) {
+            margin-bottom: 48px;
+        }
+    }
+}

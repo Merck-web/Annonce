@@ -42,8 +42,17 @@ export function useHelpers() {
         }
     };
     
+    const truncatedText = (str, count = 100) => {
+        const words = str.split(' ');
+        if (words.length > count) {
+            return words.slice(0, count).join(' ') + '...';
+        }
+        return str;
+    };
+    
     return {
         declineWord,
         addSpacesToNumber,
+        truncatedText,
     };
 }
